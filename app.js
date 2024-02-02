@@ -23,7 +23,9 @@ class UI {
 
         const books = StoredBooks;
 
-        books.foreach((book) => UI.addBookToList(book));
+        books.forEach((book) => {
+            UI.addBookToList(book)
+        });
 
     }
 
