@@ -13,8 +13,8 @@
         <h1>INSERT YOUR BOOK LIST FOR 2024</h1>
         <form action="">
             <div id="inputs">
-                <input class="input" type="text" name="" id="title" placeholder="Book Title" required>
-                <input class="input" type="text" name="" id="author" placeholder="Author" required>
+                <input class="input" type="text" name="" id="title" placeholder="Book Title" pattern="[a-zA-Z0-9]+" title="Please enter letters or numbers (no special characters)" required>
+                <input class="input" type="text" name="" id="author" placeholder="Author" pattern="[a-zA-Z0-9]+" title="Please enter letters or numbers (no special characters)" required>
                 <input type="button" id="submit" value="submit">
                </div> 
         </form>

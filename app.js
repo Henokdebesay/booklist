@@ -15,7 +15,7 @@ submit.addEventListener("click", () => {
     quote.classList.add("hidden")
 
 
-    if( !bookTitle.value && !author.value){
+    if( !bookTitle.value || !author.value){
         alert("Please insert value for Book Title & Author")
     }else {
         let row = document.createElement("tr")
@@ -37,7 +37,7 @@ submit.addEventListener("click", () => {
             row.style.textDecoration = 'none'
           }
 
-
+         
 
         }); 
 
@@ -45,17 +45,22 @@ submit.addEventListener("click", () => {
 
 
         row.addEventListener("dblclick", () => {
-            row.remove()
+             
             confirm("Are you sure you want to delete the item?")
+            row.remove()
+
           }); 
 
 
         console.log(row)
 
         table.appendChild(row);
+
+        
        
     }
-
+    author.value = "";
+    bookTitle.value = "";
 
 })
 
