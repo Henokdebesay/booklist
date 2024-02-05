@@ -1,17 +1,16 @@
-let submit = document.getElementById("submit");
 let inputs = document.getElementById("inputs")
+let submit = inputs.lastElementChild;
 let bookTitle = inputs.getElementsByClassName('input')[0];
 let author = inputs.getElementsByClassName('input')[1];
 let table = document.getElementsByTagName("table")[0];
 let tHead = document.getElementsByTagName("thead")
-let tBody = document.getElementById("book-list");
+let tBody = document.querySelector("book-list");
 
 
-// let row = document.createElement("tr")
-// let td = document.createElement("td")
-// console.log(td);
 
 submit.addEventListener("click", () => {
+
+
     if( !bookTitle.value && !author.value){
         alert("Please insert value for Book Title & Author")
     }else {
@@ -28,8 +27,13 @@ submit.addEventListener("click", () => {
 
         // Add click event listener to the row
         row.addEventListener("dblclick", () => {
-          row.remove();
+          if(!row.style.textDecoration){
+            row.style.textDecoration = 'line-through'
+          }else if(row.style.textDecoration = 'line-through' ){
+            row.style.textDecoration = 'none'
+          }
         }); 
+
 
         console.log(row)
 
@@ -38,16 +42,19 @@ submit.addEventListener("click", () => {
     }
 })
 
-// table.addEventListener("click", () => {
-//     if (tHead){
-//         console.log("head")
-//     }else if (tBody.childNodes.childNodes){
-//         console.log("children")
-//     }
+    submit.style.color = "#121EED";
+    submit.style.background = "#EDE112";
 
 
+submit.addEventListener("mouseover", () => {
+    submit.style.color = "#EDE112";
+    submit.style.background = "#121EED";
+})
+submit.addEventListener("mouseout", () => {
+    submit.style.color = "#121EED";
+    submit.style.background = "#EDE112";
+})
 
-// })
 
 
 // console.log(table)

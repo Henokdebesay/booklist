@@ -1,5 +1,5 @@
 #container{
-    background-color: red;
+    background-color: #EDE112;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,25 +7,29 @@
 }
 
 h1{
-    color: aliceblue;
+    color: #121EED;
 }
 
 table{
     background-color: white;
+    border: 5px solid black;
     width: 1120px;
     height: 30px;
 }
+
 
 table th{
     padding-top: 5px;
     border: 1px solid black;
     width: 500px;
+    font-size: 30px;
+
 }
 table td{
     padding-top: 5px;
     border: 1px solid black;
     width: 500px;
-    font-size: 20px;
+    font-size: 30px;
     vertical-align: auto;
     text-align: center;
 }
@@ -42,5 +46,7 @@ table td{
     height: 45px;
     font-size: 20px;
     font-weight: bold;
-
+    color: #121EED;
+    background-color: #EDE112;
 }
+
