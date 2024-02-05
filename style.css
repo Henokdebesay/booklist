@@ -1,0 +1,14 @@
+#container{
+    background-color: red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    background-color: white;
+    border: black 5px solid;
+    width: 700px;
+    height: 30px;
+}
