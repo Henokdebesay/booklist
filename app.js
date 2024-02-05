@@ -6,11 +6,13 @@ let table = document.getElementsByTagName("table")[0];
 let tHead = document.getElementsByTagName("thead")
 let tBody = document.querySelector("book-list");
 
-let quote = document.getElementById("disney");
+let quote = document.querySelector("p");
 
 
 
 submit.addEventListener("click", () => {
+
+    quote.classList.add("hidden")
 
 
     if( !bookTitle.value && !author.value){
@@ -40,7 +42,6 @@ submit.addEventListener("click", () => {
         }); 
 
 // I would like to remove the row that I am clicking on but it just removes the last element
-        quote.classList.add("visible")
 
 
         row.addEventListener("dblclick", () => {
@@ -72,8 +73,7 @@ submit.addEventListener("mouseout", () => {
 })
 
 
-
-console.log(table)
+console.log(quote)
 
 
 
