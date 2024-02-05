@@ -6,17 +6,18 @@
     align-items: center;
 }
 
-h1{
-    color: #121EED;
-}
-
-.visible
-{
+p{
     font-weight: bold;
     color: #121EED;
-    font-size: 20px;
+    font-size: 50px;
     text-align: center;
 }
+
+p .visible{
+    visibility: hidden;
+}
+
+
 
 table{
     background-color: white;

@@ -35,13 +35,14 @@ submit.addEventListener("click", () => {
             row.style.textDecoration = 'none'
           }
 
-          quote.add.classList("visible")
-
 
 
         }); 
 
 // I would like to remove the row that I am clicking on but it just removes the last element
+        quote.classList.add("visible")
+
+
         row.addEventListener("dblclick", () => {
             row.remove()
             confirm("Are you sure you want to delete the item?")
@@ -53,6 +54,8 @@ submit.addEventListener("click", () => {
         table.appendChild(row);
        
     }
+
+
 })
 
     submit.style.color = "#121EED";
@@ -70,7 +73,7 @@ submit.addEventListener("mouseout", () => {
 
 
 
-// console.log(table)
+console.log(table)
 
 
 
