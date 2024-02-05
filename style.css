@@ -6,9 +6,31 @@
     align-items: center;
 }
 
+h1{
+    color: aliceblue;
+}
+
 table{
     background-color: white;
-    border: black 5px solid;
-    width: 700px;
+    width: 1100px;
     height: 30px;
+}
+
+table th{
+    padding-top: 5px;
+}
+
+.input{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+#submit{
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+
 }
