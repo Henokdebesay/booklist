@@ -6,6 +6,8 @@ let table = document.getElementsByTagName("table")[0];
 let tHead = document.getElementsByTagName("thead")
 let tBody = document.querySelector("book-list");
 
+let quote = document.getElementById("disney");
+
 
 
 submit.addEventListener("click", () => {
@@ -26,13 +28,24 @@ submit.addEventListener("click", () => {
         row.appendChild(td2)
 
         // Add click event listener to the row
-        row.addEventListener("dblclick", () => {
+        row.addEventListener("click", () => {
           if(!row.style.textDecoration){
             row.style.textDecoration = 'line-through'
           }else if(row.style.textDecoration = 'line-through' ){
             row.style.textDecoration = 'none'
           }
+
+          quote.add.classList("visible")
+
+
+
         }); 
+
+// I would like to remove the row that I am clicking on but it just removes the last element
+        row.addEventListener("dblclick", () => {
+            row.remove()
+            confirm("Are you sure you want to delete the item?")
+          }); 
 
 
         console.log(row)
