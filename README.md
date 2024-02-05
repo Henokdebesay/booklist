@@ -4,9 +4,9 @@ Book List App is a tool to keep track of the book that you plan to read and remo
 
 ## Tools Used
 
-JavaScript
-CSS
-HTML
+#JavaScript
+#CSS
+#HTML
 
 ## Contribution
 
