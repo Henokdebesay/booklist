@@ -19,20 +19,19 @@ submit.addEventListener("click", () => {
 
         let td1 = document.createElement("td")
         td1.textContent = bookTitle.value;
+        
         let td2 = document.createElement("td")
         td2.textContent = author.value;
 
         row.appendChild(td1)
         row.appendChild(td2)
 
-        console.log(row);
-
         // Add click event listener to the row
-        row.addEventListener("click", () => {
-            console.log("Row clicked:");
-            console.log("Book Title:", td1.textContent);
-            console.log("Author:", td2.textContent);
-        });
+        row.addEventListener("dblclick", () => {
+          row.remove();
+        }); 
+
+        console.log(row)
 
         table.appendChild(row);
        
